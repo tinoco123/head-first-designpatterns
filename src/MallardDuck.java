@@ -1,20 +1,13 @@
-import interfaces.Flyable;
-import interfaces.Quackable;
-
-public class MallardDuck extends Duck implements Flyable, Quackable {
+public class MallardDuck extends Duck {
+    public MallardDuck() {
+        quackBehavior = new Quack();
+        flyBehavior = new FlyWithWings();
+    }
 
     @Override
     public void display() {
-        System.out.println("Looks like a mallard");
+        System.out.println("I'm a real Mallard duck");
     }
 
-    @Override
-    public void fly() {
-        System.out.println("Mallard duck flying");
-    }
 
-    @Override
-    public void quack(){
-        System.out.println("Mallard duck quacking");
-    }
 }
