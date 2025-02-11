@@ -1,4 +1,6 @@
-import interfaces.FlyBehavior;
+package strategy;
+
+import strategy.interfaces.FlyBehavior;
 
 public class FlyNoWay implements FlyBehavior {
     @Override

@@ -1,11 +1,11 @@
-package designPuzzle;
+package strategy.designPuzzle;
 
-import designPuzzle.characters.King;
-import designPuzzle.characters.Queen;
-import designPuzzle.weapons.AxeBehavior;
-import designPuzzle.weapons.BowAndArrowBehavior;
-import designPuzzle.weapons.KnifeBehavior;
-import designPuzzle.weapons.SwordBehavior;
+import strategy.designPuzzle.characters.King;
+import strategy.designPuzzle.characters.Queen;
+import strategy.designPuzzle.weapons.AxeBehavior;
+import strategy.designPuzzle.weapons.BowAndArrowBehavior;
+import strategy.designPuzzle.weapons.KnifeBehavior;
+import strategy.designPuzzle.weapons.SwordBehavior;
 
 public class FightSimulator {
     public static void main(String[] args){

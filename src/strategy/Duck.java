@@ -1,4 +1,6 @@
-import interfaces.*;
+package strategy;
+
+import strategy.interfaces.*;
 
 public abstract class Duck {
     FlyBehavior flyBehavior;

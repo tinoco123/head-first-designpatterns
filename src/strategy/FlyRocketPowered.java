@@ -1,4 +1,6 @@
-import interfaces.FlyBehavior;
+package strategy;
+
+import strategy.interfaces.FlyBehavior;
 
 public class FlyRocketPowered implements FlyBehavior {
     @Override

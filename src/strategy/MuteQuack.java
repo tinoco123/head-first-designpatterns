@@ -1,4 +1,6 @@
-import interfaces.QuackBehavior;
+package strategy;
+
+import strategy.interfaces.QuackBehavior;
 
 public class MuteQuack implements QuackBehavior {
     @Override

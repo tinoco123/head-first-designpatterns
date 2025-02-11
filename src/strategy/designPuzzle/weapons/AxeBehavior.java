@@ -1,6 +1,6 @@
-package designPuzzle.weapons;
+package strategy.designPuzzle.weapons;
 
-import designPuzzle.interfaces.WeaponBehavior;
+import strategy.designPuzzle.interfaces.WeaponBehavior;
 
 public class AxeBehavior implements WeaponBehavior {
     @Override

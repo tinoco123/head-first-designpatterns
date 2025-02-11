@@ -1,6 +1,6 @@
-package designPuzzle;
+package strategy.designPuzzle;
 
-import designPuzzle.interfaces.WeaponBehavior;
+import strategy.designPuzzle.interfaces.WeaponBehavior;
 
 public class Character {
     private WeaponBehavior weapon;
