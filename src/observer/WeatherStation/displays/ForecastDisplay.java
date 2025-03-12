@@ -11,13 +11,13 @@ public class ForecastDisplay implements Observer, DisplayElement {
 
     public ForecastDisplay(WeatherData weatherData){
         this.weatherData =  weatherData;
-        weatherData.registerObserver(this);
+        this.weatherData.registerObserver(this);
     }
 
     @Override
-    public void update(float temp, float humidity, float pressure) {
+    public void update() {
         lastPressure = currentPressure;
-        currentPressure = pressure;
+        currentPressure = weatherData.getPressure();
 
         display();
     }

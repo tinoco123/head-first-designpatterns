@@ -2,6 +2,7 @@ package observer.WeatherStation;
 
 import observer.WeatherStation.displays.CurrentConditionDisplay;
 import observer.WeatherStation.displays.ForecastDisplay;
+import observer.WeatherStation.displays.HeadIndexDisplay;
 import observer.WeatherStation.displays.StatisticsDisplay;
 
 
@@ -18,6 +19,7 @@ public class WeatherStation {
         weatherData.setMeasurements(78, 90, 29.2f);
 
         weatherData.removeObserver(forecastDisplay);
+        HeadIndexDisplay headIndexDisplay = new HeadIndexDisplay(weatherData);
         weatherData.setMeasurements(62, 90, 28.1f);
     }
 
