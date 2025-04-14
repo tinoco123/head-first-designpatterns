@@ -15,18 +15,24 @@ public abstract class Pizza {
 
     public void prepare(){
      System.out.println("Preparing " + name);
+     System.out.println("Tossing dough...");
+     System.out.println("Adding sauce...");
+     System.out.println("Adding toppings: ");
+     for (String topping : toppings) {
+         System.out.println("   " + topping);
+     }
     }
 
-    public void bake() {
-		System.out.println("Baking " + name);
+    void bake() {
+        System.out.println("Bake for 25 minutes at 350");
+    }
+
+	void cut() {
+        System.out.println("Cutting the pizza into diagonal slices");
 	}
 
-	public void cut() {
-		System.out.println("Cutting " + name);
-	}
-
-	public void box() {
-		System.out.println("Boxing " + name);
+	void box() {
+        System.out.println("Place pizza in official PizzaStore box");
 	}
 
     public String toString() {
